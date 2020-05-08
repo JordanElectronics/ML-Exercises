@@ -6,6 +6,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 print(tf.__version__)
 
+# Load IMDB reviews
 imdb, info = tfds.load("imdb_reviews", with_info=True, as_supervised=True)
 
 train_data, test_data = imdb['train'], imdb['test']
