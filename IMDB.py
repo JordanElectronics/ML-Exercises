@@ -89,6 +89,8 @@ print('vecs.tsv and meta.tsv written to disk.')
 
 import matplotlib.pyplot as plt
 
+# Test
+
 def plot_graphs(history, string):
   plt.plot(history.history[string])
   plt.plot(history.history['val_'+string])
